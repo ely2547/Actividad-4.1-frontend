@@ -17,7 +17,7 @@ function MiComponente() {
 
   // Efecto que se ejecuta al cambiar el término de búsqueda para obtener recetas de la API
   useEffect(() => {
-    fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${search}&apiKey=63dda04b47d0406a9559597876be5ed4`)
+    fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${search}&apiKey=47b8f73e19024502b75478ca56ec095d`)
       .then(response => response.json())
       .then(data => setRecipes(data.results));
   }, [search]);
