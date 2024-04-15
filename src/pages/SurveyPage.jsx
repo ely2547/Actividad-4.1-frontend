@@ -61,7 +61,7 @@ class Encuesta extends React.Component { // Declaración de la clase Encuesta qu
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500 p-6 dark:from-gray-700 to-gray-900">
         <h1 className="text-5xl font-extrabold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-600"> 
-          Crea una encuesta para que otros usuarios la respondan
+          Crea una encuesta para que otros la respondan
         </h1>
         <div className="w-full max-w-4xl bg-white dark:bg-gray-800 shadow-xl rounded-lg overflow-hidden px-10 py-8"> 
           <div className="encuesta space-y-6"> 
