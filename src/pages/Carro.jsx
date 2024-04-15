@@ -32,9 +32,18 @@ const Carro = () => {
     return carrito.reduce((total, item) => total + item.price * item.cantidad, 0);
   };
 
-  const procederConLaCompra = () => {
-    console.log('Procediendo con la compra...');
+  const contactarPorWhatsApp = () => {
+    let mensaje = 'Hola, me gustaría completar la compra de los siguientes productos:';
+    carrito.forEach((item) => {
+      mensaje += `%0A${item.name} (Cantidad: ${item.cantidad}) - Precio: $${item.price}`;
+    });
+    mensaje += `%0ATotal: $${calcularTotal()}`;
+    
+    const numeroWhatsApp = '+584164694935';
+    const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+    window.open(urlWhatsApp, '_blank');
   };
+  
 
   return (
     <motion.div
@@ -71,11 +80,12 @@ const Carro = () => {
       )}
       <div className="flex justify-between items-center mt-4">
         <h3 className="text-lg font-semibold">Total a pagar: ${calcularTotal()}</h3>
+
         <button 
-          onClick={procederConLaCompra}
+          onClick={contactarPorWhatsApp}
           className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700"
         >
-          Proceder con la Compra
+          Continuar la compra por WhatsApp
         </button>
       </div>
     </motion.div>
