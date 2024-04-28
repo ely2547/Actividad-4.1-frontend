@@ -3,7 +3,7 @@
 ### Descripción del Proyecto
 Este proyecto es una aplicación frontend desarrollada con React, aprovechando React Vite para un entorno de desarrollo rápido y un rendimiento optimizado. Además, se integra Tailwind css y Framer Motion para estilos y animaciones también Axios para realizar peticiones HTTP.
 
-![Diseño sin título(2)](https://github.com/ely2547/frontend./assets/102032989/83748cd3-9570-49ad-bb45-81f14edd135b)
+![Diseño sin título(1)](https://github.com/ely2547/frontend./assets/102032989/5339ee71-c059-4977-bc9d-f77362ce48dc)
 
 ### Instalación
 1. Clonar el repositorio.
